@@ -30,8 +30,19 @@ index.html
 <!-- ===== END SECTION 3 ===== -->
 <!-- ===== SECTION 4: Carbon footprint calculator (Student 4) ===== -->
 <section class="card" id="calculator">
-<h2>Carbon Footprint Calculator</h2>
-<p>Coming soon.</p>
+  <h2>Carbon Footprint Calculator</h2>
+
+  <label for="kwh">Electricity used this month (kWh)</label>
+  <input id="kwh" type="number" min="0" value="200">
+
+  <label for="car">Car travel this month (km)</label>
+  <input id="car" type="number" min="0" value="300">
+
+  <label for="bus">Bus travel this month (km)</label>
+  <input id="bus" type="number" min="0" value="50">
+
+  <button id="calc-btn" type="button">Calculate</button>
+  <p id="calc-result" aria-live="polite"></p>
 </section>
 <!-- ===== END SECTION 4 ===== -->
 <!-- ===== SECTION 5: Tips and resources (Student 5) ===== -->
