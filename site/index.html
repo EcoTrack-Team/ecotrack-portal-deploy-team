@@ -11,27 +11,57 @@ index.html
 <body>
 <!-- ===== SECTION 1: Header and navigation (Student 1) ===== -->
 <header id="site-header">
-<h1>EcoTrack Community Portal</h1>
-<p id="tagline">Tracking our community's carbon savings together.</p>
+    <h1>EcoTrack Community Portal</h1>
+    <p id="tagline">Tracking our community's carbon savings together - taking care of our enviroment</p>
+    <nav>
+        <a href="#team">Team</a>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#calculator">Calculator</a>
+        <a href="#resources">Resources</a>
+        <a href="#status">Status</a>
+    </nav>
 </header>
 <!-- ===== END SECTION 1 ===== -->
 <main class="grid">
 <!-- ===== SECTION 2: Meet the sprint team (Student 2) ===== -->
 <section class="card" id="team">
 <h2>Meet the Sprint Team</h2>
-<p>Coming soon.</p>
+<p>Meet the people behind the EcoTrack Community Portal.</p>
+<ul>
+  <li>@paulo-benedet - Product Owner</li>
+  <li>@Karanhub07 - Scrum Master</li>
+  <li>@aayan2607 - Lead Developer</li>
+  <li>@Guri9431 - Platform and Infrastructure Engineer</li>
+  <li>@dhruvalsinhmahida7128 - QA and CI Engineer</li>
+  <li>@edmundaff - Release and Operations Engineer</li>
+</ul>
 </section>
 <!-- ===== END SECTION 2 ===== -->
 <!-- ===== SECTION 3: Energy savings dashboard (Student 3) ===== -->
 <section class="card" id="dashboard">
-<h2>Energy Savings Dashboard</h2>
-<p>Coming soon.</p>
+  <h2>Energy Savings Dashboard</h2>
+  <p><strong>1,240 kWh</strong> of electricity saved this month</p>
+  <p><strong>86</strong> households taking part</p>
+  <p><strong>310 kg</strong> of CO2e avoided</p>
+  <label for="goal">Progress towards our 500 kg goal</label>
+  <progress id="goal" value="310" max="500">62%</progress>
 </section>
 <!-- ===== END SECTION 3 ===== -->
 <!-- ===== SECTION 4: Carbon footprint calculator (Student 4) ===== -->
 <section class="card" id="calculator">
-<h2>Carbon Footprint Calculator</h2>
-<p>Coming soon.</p>
+  <h2><h2>Monthly Carbon Footprint Calculator</h2></h2>
+
+  <label for="kwh">Electricity used this month (kWh)</label>
+  <input id="kwh" type="number" min="0" value="200">
+
+  <label for="car">Car travel this month (km)</label>
+  <input id="car" type="number" min="0" value="300">
+
+  <label for="bus">Bus travel this month (km)</label>
+  <input id="bus" type="number" min="0" value="50">
+
+  <button id="calc-btn" type="button">Calculate</button>
+  <p id="calc-result" aria-live="polite"></p>
 </section>
 <!-- ===== END SECTION 4 ===== -->
 <!-- ===== SECTION 5: Tips and resources (Student 5) ===== -->
